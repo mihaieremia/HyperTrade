@@ -1,7 +1,7 @@
 variable "github_username" {
   type        = string
   description = "Github user/organization name"
-  default     = "karanpratapsingh"
+  default     = "mihaieremia"
 }
 
 variable "GHCR_TOKEN" {

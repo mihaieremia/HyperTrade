@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="https://www.buymeacoffee.com/karanps" target="_blank"><img height="30px" src="https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg" alt="Buy Me A Coffee" ></a>
-<img src="https://img.shields.io/github/workflow/status/karanpratapsingh/HyperTrade/Build?style=for-the-badge" />
+<img src="https://img.shields.io/github/workflow/status/mihaieremia/HyperTrade/Build?style=for-the-badge" />
 <img src="https://img.shields.io/badge/License-GPL-red.svg?style=for-the-badge" />
 <img alt="Twitter: karan_6864" src="https://img.shields.io/twitter/follow/karan_6864.svg?style=for-the-badge&logo=TWITTER&logoColor=FFFFFF&labelColor=00aced&logoWidth=20&color=00aced" target="_blank" />
 <img height="29px" src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%203.svg" alt="DigitalOcean Referral Badge" />
@@ -51,7 +51,7 @@ A few months ago I got into the crypto market. It was all new and fascinating to
 
 I was curious and wanted to scale it into a real system that can execute trades for me. I had a lot of fun building this. I got to play with lots of different technologies while growing my financial knowledge.
 
-Feel free to [reach out](https://karanpratapsingh.com?action=contact) to me if you have any additional questions. There are lots of fixes and features to be done!
+Feel free to [reach out](https://mihaieremia.com?action=contact) to me if you have any additional questions. There are lots of fixes and features to be done!
 
 _It is important to note that this project is under active development and was developed as an experiment. Currently, only [Binance](https://binance.com/) is supported but contributions are welcome!_
 
@@ -71,7 +71,7 @@ This system has lots of features such as:
 
 - **Telegram Support**: On the move? Use [Telegram](#telegram) bot to receive real-time notifications and much more.
 
-- **Ready to deploy**: Comes with [Infrastructure as Code](https://dev.to/karanpratapsingh/introduction-to-infrastructure-as-code-with-terraform-4f29) which is ready to deploy to [Digital Ocean](https://www.digitalocean.com/).
+- **Ready to deploy**: Comes with [Infrastructure as Code](https://dev.to/mihaieremia/introduction-to-infrastructure-as-code-with-terraform-4f29) which is ready to deploy to [Digital Ocean](https://www.digitalocean.com/).
 
 - **Easy to upgrade**: Modify the system easily to your needs.
 
@@ -119,7 +119,7 @@ We also use [JetStream](https://docs.nats.io/nats-concepts/jetstream) for real-t
 
 <img width="55%" src="https://user-images.githubusercontent.com/29705703/156038663-61d9c242-de32-41da-9a59-a2452a0ead11.png" alt="publish-subscribe" /> <img width="43.85%" src="https://user-images.githubusercontent.com/29705703/156039685-bb32987e-a11f-4246-a6fa-1d74f6388119.png" alt="request-reply" />
 
-_Read more about [Distributed communication patterns with NATS](https://dev.to/karanpratapsingh/distributed-communication-patterns-with-nats-g17)_
+_Read more about [Distributed communication patterns with NATS](https://dev.to/mihaieremia/distributed-communication-patterns-with-nats-g17)_
 
 **Why Kubernetes? Isn't it overkill?**
 

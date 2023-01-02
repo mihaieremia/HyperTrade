@@ -5,32 +5,32 @@ profiles:
   - name: production
     build:
       artifacts:
-        - image: ghcr.io/karanpratapsingh/hypertrade/proxy
+        - image: ghcr.io/mihaieremia/hypertrade/proxy
           context: ./services/proxy
-        - image: ghcr.io/karanpratapsingh/hypertrade/nats
+        - image: ghcr.io/mihaieremia/hypertrade/nats
           context: ./services/nats
-        - image: ghcr.io/karanpratapsingh/hypertrade/web
+        - image: ghcr.io/mihaieremia/hypertrade/web
           context: ./services/web
           docker:
             target: production
-        - image: ghcr.io/karanpratapsingh/hypertrade/exchange
+        - image: ghcr.io/mihaieremia/hypertrade/exchange
           context: ./services/exchange
           docker:
             target: production
-        - image: ghcr.io/karanpratapsingh/hypertrade/notification
+        - image: ghcr.io/mihaieremia/hypertrade/notification
           context: ./services/notification
           docker:
             target: production
-        - image: ghcr.io/karanpratapsingh/hypertrade/strategy
+        - image: ghcr.io/mihaieremia/hypertrade/strategy
           context: ./services/strategy
   - name: development
     build:
       artifacts:
-        - image: ghcr.io/karanpratapsingh/hypertrade/proxy
+        - image: ghcr.io/mihaieremia/hypertrade/proxy
           context: ./services/proxy
-        - image: ghcr.io/karanpratapsingh/hypertrade/nats
+        - image: ghcr.io/mihaieremia/hypertrade/nats
           context: ./services/nats
-        - image: ghcr.io/karanpratapsingh/hypertrade/web
+        - image: ghcr.io/mihaieremia/hypertrade/web
           context: ./services/web
           docker:
             target: development
@@ -38,7 +38,7 @@ profiles:
             manual:
               - src: "src/**/*.ts*"
                 dest: .
-        - image: ghcr.io/karanpratapsingh/hypertrade/exchange
+        - image: ghcr.io/mihaieremia/hypertrade/exchange
           context: ./services/exchange
           docker:
             target: development
@@ -46,7 +46,7 @@ profiles:
             manual:
               - src: "**/*.go"
                 dest: .
-        - image: ghcr.io/karanpratapsingh/hypertrade/notification
+        - image: ghcr.io/mihaieremia/hypertrade/notification
           context: ./services/notification
           docker:
             target: development
@@ -54,7 +54,7 @@ profiles:
             manual:
               - src: "**/*.go"
                 dest: .
-        - image: ghcr.io/karanpratapsingh/hypertrade/strategy
+        - image: ghcr.io/mihaieremia/hypertrade/strategy
           context: ./services/strategy
 deploy:
   helm:
@@ -67,12 +67,12 @@ deploy:
           - infrastructure/k8s/values.yaml
           - infrastructure/k8s/env.yaml
         artifactOverrides:
-          images.proxy: ghcr.io/karanpratapsingh/hypertrade/proxy
-          images.nats: ghcr.io/karanpratapsingh/hypertrade/nats
-          images.exchange: ghcr.io/karanpratapsingh/hypertrade/exchange
-          images.notification: ghcr.io/karanpratapsingh/hypertrade/notification
-          images.strategy: ghcr.io/karanpratapsingh/hypertrade/strategy
-          images.web: ghcr.io/karanpratapsingh/hypertrade/web
+          images.proxy: ghcr.io/mihaieremia/hypertrade/proxy
+          images.nats: ghcr.io/mihaieremia/hypertrade/nats
+          images.exchange: ghcr.io/mihaieremia/hypertrade/exchange
+          images.notification: ghcr.io/mihaieremia/hypertrade/notification
+          images.strategy: ghcr.io/mihaieremia/hypertrade/strategy
+          images.web: ghcr.io/mihaieremia/hypertrade/web
 portForward:
   - resourceName: proxy
     resourceType: service
